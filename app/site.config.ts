@@ -5,9 +5,9 @@
 export const SITE = {
   name: 'Teacher Yasmin',
   // TROCAR: número do WhatsApp dela, só dígitos, com 55 + DDD (ex: 5581999998888)
-  whatsapp: '5581900000000',
+  whatsapp: '5581988265524',
   // TROCAR: link do Instagram dela
-  instagram: 'https://instagram.com/SEU_USUARIO',
+  instagram: 'https://instagram.com/lucas.nascimeento1',
 };
 
 /**
