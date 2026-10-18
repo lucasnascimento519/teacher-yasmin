@@ -8,6 +8,7 @@
  */
 import { useEffect, useState } from 'react';
 import { GOALS, SITE } from '../site.config';
+import { Alert, Button } from './ui';
 
 // Máscara de telefone brasileiro: 81999998888 -> (81) 99999-8888
 function maskPhone(v: string) {
@@ -79,8 +80,8 @@ export default function LeadModal({ onClose }: { onClose: () => void }) {
             <label className="field">Nome<input value={name} onChange={(e) => setName(e.target.value)} autoComplete="name" placeholder="Como você se chama?" /></label>
             <label className="field">Telefone<input value={phone} onChange={(e) => setPhone(maskPhone(e.target.value))} inputMode="tel" autoComplete="tel" placeholder="(81) 99999-9999" /></label>
             <label className="field">E-mail<input value={email} onChange={(e) => setEmail(e.target.value)} type="email" autoComplete="email" placeholder="voce@email.com" /></label>
-            {error && <p className="err" role="alert">{error}</p>}
-            <button className="btn" type="submit" disabled={loading}>{loading ? 'Salvando…' : 'Avançar'}</button>
+            {error && <Alert>{error}</Alert>}
+            <Button type="submit" full loading={loading}>{loading ? 'Salvando…' : 'Avançar'}</Button>
             <p className="fine">Seus dados são usados só para a Teacher Yasmin entrar em contato com você.</p>
           </form>
         ) : (

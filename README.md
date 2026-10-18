@@ -7,6 +7,6 @@ Landing page (Next.js) com modal de contato: salva nome/telefone/e-mail no Supab
 2. Supabase: crie um projeto, rode o conteúdo de `supabase.sql` no SQL Editor e copie a Project URL e a Secret key `sb_secret_...` (Project Settings > API Keys; se só houver as chaves antigas, use a `service_role`).
 3. Na Vercel, crie as variáveis `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY` (nomes exatos) antes do Deploy.
 
-## Onde mexer teste
+## Onde mexer
 - Textos das seções: `app/page.tsx` · Opções do modal e mensagens do WhatsApp: `app/site.config.ts`
 - Cores e fontes: topo de `app/globals.css` · Fotos: `public/images/`
