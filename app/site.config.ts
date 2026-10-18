@@ -4,10 +4,10 @@
  */
 export const SITE = {
   name: 'Teacher Yasmin',
-  // TROCAR: número do WhatsApp dela, só dígitos, com 55 + DDD (ex: 5581999998888)
+  // Número do WhatsApp dela, só dígitos, com 55 + DDD (ex: 5581999998888)
   whatsapp: '5581983462818',
-  // TROCAR: link do Instagram dela
-  instagram: 'https://instagram.com/l',
+  // Instagram dela
+  instagram: 'https://instagram.com/teacheryasminlins',
 };
 
 /**
